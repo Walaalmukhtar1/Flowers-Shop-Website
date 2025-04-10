@@ -1,0 +1,759 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    padding: 2rem 9%;
+    background-color: white;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(191, 191, 190);
+
+}
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .navbar .nav {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+
+}
+
+
+header .navbar .logo{
+    font-size: 2rem;
+}
+    
+header .navbar a{
+   color: goldenrod;
+   padding: 0 .5rem;
+   font-size: 1.3rem;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   transition: .3s;
+   transition: #f3f2f2 0.3s, goldenrod 0.3s;
+}
+
+header .navbar button{
+    padding: 0.5rem 1rem;
+    background: #f3f2f2; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    transition: #f3f2f2 0.3s, white 0.3s;
+}
+
+header .navbar button:hover{
+    background: #e9e8e8;
+}
+
+header .navbar .nav .navicons a:hover {
+    color: rgb(161, 123, 90); 
+    transition: .5s;
+}
+
+header .navbar span{
+   color: silver;
+   font-size: 1.5rem;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 70vh;
+    background: url(colorful-flowers-uhd-4k-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.295);
+    background-blend-mode: overlay;
+}
+
+
+
+body .hero-content  {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.879);
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.hero-content h1 span{
+    color: rgb(161, 123, 90);
+}
+
+.hero-content h1 {
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: black;
+    width: 100%;
+}
+.hero-content p span {
+    color: rgb(161, 123, 90);
+}
+
+body {
+    background-color: rgb(246, 246, 246);
+    height: 100vh;
+}
+
+body .title {
+    font-weight: 100;
+    color: rgb(161, 123, 90);
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline 2px;
+    margin-top: 4rem;
+}
+
+body .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+body .products .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 250px;
+}
+body .products .content{
+    display: flex;
+    align-items: center;  justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+body .products button{
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #a17b5a; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    transition: #a17b5a 0.3s, white 0.3s;
+}
+
+body .products button:hover {
+    background: #8b6b4f; 
+    transition: .5s ;
+}
+
+.products img{ 
+    margin-bottom: 1rem;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+footer .contact-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin: 2rem;
+    font-weight: bolder;
+}
+input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    min-height: 50px; 
+    max-height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #8b6b4f;
+    border-radius: 5px;
+}
+
+footer .logo {
+   color: goldenrod;
+   padding: 0 .5rem;
+   font-size: 2rem;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer span {
+    color: silver;
+}
+textarea {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    min-height: 100px; 
+    max-height: 100px;
+    resize: vertical; 
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #8b6b4f;
+    border-radius: 5px;
+}
+
+footer button{
+    display: block;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background: #a17b5a; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font: 1em sans-serif;
+    transition: .3s;
+    transition: #a17b5a .3s, white .3s;
+}
+
+footer button:hover {
+    background: #8b6b4f; 
+    transition: .5s ;
+}
+
+.cart-body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.cart-body .cart-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cart-body .cart-content h4{
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color:rgb(161, 123, 90);
+    font-weight: 100;
+ }
+ 
+.cart-body .cart-content h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: .5rem;
+ }
+
+ .cart-content .payment h3{ 
+    font-size: 2rem;
+
+ }
+
+ .cart-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+ }
+
+ .payment {
+    width: 80%; 
+    max-width: 400px; 
+    border-radius: 5px;
+    border: 1px solid #8b6b4f;
+    padding: 1rem;
+    text-align: center;
+
+ }
+
+ .payment button {
+    background-color: rgb(161, 123, 90);
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition: rgb(161, 123, 90) 0.3s, white 0.3s;
+}
+
+.payment button:hover {
+    background-color: rgb(130, 100, 70);
+}
+
+.profile {
+    width: 100%;
+    height: 100vh;
+    background: url(beautiful_bunch_of_colorful_flowers_4k_hd_flowers-3840x2160.jpg) no-repeat;
+    background-color: #a3a2a2d8;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+}
+
+.profile .form  {
+    height: auto;
+}
+
+.form h1{
+    color: rgb(0, 0, 0);
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 3rem; 
+    height: 450px;
+    width: 400px;
+    border: 1px solid #b7b7b756;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.938);
+    box-shadow: inset -5px -5px rgba(255, 255, 255, 0.297);
+    border-radius: 25px;
+}
+
+.rem {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+#checkbox {
+    width: 15px;
+}
+
+.form .box {
+    padding: 12px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset -3px -3px #d8d8d83d;
+    color: #a17b5a;
+    font-size: 1rem;
+}
+
+#submit {
+    padding: 10px 20px;
+    width: 7rem;
+    background: #ffffff; 
+    color: goldenrod;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px rgba(228, 228, 228, 0.274);
+    cursor: pointer;
+    margin: 1rem;
+    margin-top: 2rem;
+    transition: .3s;
+    transition: #f3f2f2 .3s, goldenrod .3s;
+}
+
+
+#submit:hover{
+    background: #e9e8e8;
+    transition: .5s;
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form a {
+    text-decoration: none;
+    color: rgb(78, 16, 66);
+}
+
+.form a:visited {
+    color: rgb(78, 16, 66);
+}
+
+.form a:hover {
+    color: rgb(203, 63, 175);
+}
+
+
+.pass-body .form{
+    padding: 12px;
+    width: 80%;
+    height: 50%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset -3px -3px #b3b3b31e;
+    color: #a17b5a;
+    font-size: 1rem;}
+
+.pass-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pass-body img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+
+
+.pass-body form #submit {
+    width: 60%;
+    background: #fafafa; 
+    color: goldenrod;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px rgba(250, 250, 250, 0.219);
+    cursor: pointer;
+    margin: 1rem;
+    transition: .3s;
+    transition: #f3f2f2 .3s, goldenrod .3s;
+}
+
+
+
+.pass-body #submit:hover{
+    background: #e9e8e8;
+    transition: .5s;
+}
+
+@media screen and (max-width: 481px)  {
+
+    header .navbar button{
+        font-size: 1rem;
+        padding: 0.4rem .4rem;
+    }
+    header .navbar button a{
+        font-size: .9rem;
+    }
+
+    header .navbar .logo{
+        font-size: 1.2rem;
+    }
+    
+    header .navbar span{
+        font-size: 1rem;
+    }
+
+    header .navbar a{
+       font-size: .9rem;
+    }
+      
+    
+    .hero-section {
+        width: 100%;
+        min-height: 40%;
+    }
+    
+    
+    body .hero-content  {
+        width: 80%;   
+        margin: -8rem auto auto; 
+    }
+
+    
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content p {
+        font-size: .9rem;
+        color: black;
+    }
+
+    body .title {
+        font-size: 1.7rem;
+    }
+
+
+
+.products img{ 
+    margin-bottom: 1rem;
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+footer h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+input {
+
+    width: 80%;
+}
+
+textarea {
+    width: 80%;
+}
+
+
+.form h1{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.form {
+    height: auto;
+    width: 80%;
+}
+
+.rem {
+    font-size: .9rem;
+}
+#checkbox {
+    width: 15px;
+}
+
+
+#submit {
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 15px;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.pass-body .form{
+    height: auto;
+    width: 80%;
+    font-size: 1rem;}
+
+.pass-body img {
+    max-width: 150px;
+    max-height: 120px;
+}
+
+
+.pass-body #submit {
+    width: 100%;
+    font-size: .9rem;
+    background-color: #d1d1d138;
+}
+
+.cart-body {
+    width: 100%;
+    height: 100vh; 
+}
+
+.cart-body .cart-content h4{
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+ 
+ 
+
+ .cart-content .payment h3{ 
+    font-size: 1.2rem;
+ }
+
+ .payment {
+    width: 80%; 
+ }
+
+ .payment button {
+    font-size: .7rem;
+    padding: 0.7rem 1.2rem;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 482px) and (max-width: 991px){
+    header .navbar .logo{
+        font-size: 1.7rem;
+    }
+    
+    header .navbar span{
+        font-size: 1.2rem;
+    }
+
+    header .navbar a{
+       font-size: 1.2rem;
+    }
+      
+    
+    .hero-section {
+        width: 100%;
+        min-height: 30vh;
+    }
+    
+    
+    body .hero-content  {
+        width: 80%;   
+        margin: -5rem auto auto; 
+    }
+
+    
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        color: black;
+    }
+
+    body .title {
+        font-size: 2.2rem;
+    }
+    .pass-body .form{
+        width: 80%;
+        height: 40%;
+        font-size: 1rem;}
+    
+    .pass-body img {
+        max-width: 150px;
+        max-height: 120px;
+    }
+    
+    
+    .pass-body #submit {
+        width: 10rem;
+        font-size: .9rem;
+    }
+    
+    
+    
+}
+
+
+@media screen and (min-width: 992px){ 
+    .hero-section {
+        width: 100%;
+        min-height: 40vh;
+    }
+    
+    
+    body .hero-content  {
+        width: 80%;   
+        margin: -5rem auto auto; 
+    }
+
+
+    body .title {
+        font-size: 2.5rem;
+    }
+
+footer {
+    height: 45vh;
+
+}
+
+input {
+    width: 50%;
+}
+
+textarea {
+    width: 50%;
+}
+.pass-body .form{
+    width: 50%;
+    height: 40%;
+    font-size: 1rem;}
+
+.pass-body img {
+    max-width: 150px;
+    max-height: 120px;
+}
+
+
+.pass-body #submit {
+    width: 30%;
+    font-size: .9rem;
+    background-color: #d1d1d138;
+}
+}
+
+@media screen and (min-width: 1600px){
+    
+    input {
+        width: 30%;
+    }
+    
+    textarea {
+        width: 30%;
+    }
+        
+    body .hero-content  {
+        width: 50%;   
+        margin: -5rem auto auto; 
+    }
+
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+}
